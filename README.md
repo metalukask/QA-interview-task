@@ -3,50 +3,73 @@
 
 This project contains a React frontend and a Node.js backend.
 
-## Prerequisites
-- Node.js (v14 or higher)
-- npm (v6 or higher)
 
-## Getting Started
+#
 
-### Step 1: Clone the repository
+## Step 1: Clone the repository
 ```bash
 git clone https://github.com/metalukask/QA-interview-task
 ```
 
-### Step 2: Set up the Backend (Node.js)
+## Step 2: Docker setup
+### Prerequisites
+
+- Docker installed
+
+### Build and start application
+1. build application
+   ```shell
+   docker compose build
+   ```
+
+2. run application
+   ```shell
+   docker compose up -d
+   ```
+3. stop application (once finished)
+   ```shell
+   docker compose down
+   ```
+
+## Step 3 alternative setup without docker
+
+### Prerequisites
+- Node.js (v14 or higher)
+- npm (v6 or higher)
+
+###  Set up the Backend (Node.js)
 1. Navigate to the `/server` directory:
-   ```bash
+   ```shell
    cd server
    ```
 2. Install dependencies:
-   ```bash
+   ```shell
    npm install
    ```
 3. Start the backend server:
-   ```bash
+   ```shell
    npm start
    ```
    The server will run at `http://localhost:8000`.
 
-### Step 3: Set up the Frontend (React)
+### Set up the Frontend (React)
 1. Navigate to the `/client` directory:
-   ```bash
+   ```shell
    cd client
    ```
 2. Install dependencies:
-   ```bash
+   ```shell
    npm install
    ```
 3. Start the React app:
-   ```bash
+   ```shell
    npm start
    ```
    The React app will run at `http://localhost:3000`.
 
-### Step 4: Login Credentials
-- **Username**: admin
-- **Password**: admin321
+## Step 4: Login Credentials
+- **Username**: `admin`
+- **Password**: `admin321`
 
 After logging in, you will be redirected to the homepage, where you can navigate to other pages.
 
@@ -60,7 +83,7 @@ After logging in, you will be redirected to the homepage, where you can navigate
 
 ### Troubleshooting
 - If the React app is not connecting to the backend, ensure that both the frontend and backend are running simultaneously.
-- Make sure the backend is running on port `5001`, and the frontend is on port `3000`.
+- Make sure the backend is running on port `8000`, and the frontend is on port `3000`.
 
 ---
 
