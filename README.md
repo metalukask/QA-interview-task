@@ -3,9 +3,7 @@
 
 This project contains a React frontend and a Node.js backend.
 
-
 #
-
 ## Step 1: Clone the repository
 ```bash
 git clone https://github.com/metalukask/QA-interview-task
@@ -31,7 +29,7 @@ git clone https://github.com/metalukask/QA-interview-task
    docker compose down
    ```
 
-## Step 3 alternative setup without docker
+## Step 3: Alternative setup without docker
 
 ### Prerequisites
 - Node.js (v14 or higher)
